@@ -21,9 +21,7 @@ jobs:
 
       - name: Create CodeDeploy deployment bundle
         run: |
-          mkdir deploy-bundle
-          cp -r ./* ./deploy-bundle/
-          zip -r deployment-bundle.zip ./deploy-bundle
+          zip -r deployment-bundle.zip . -x .git\*
 
       - name: Upload to S3
         run: |
