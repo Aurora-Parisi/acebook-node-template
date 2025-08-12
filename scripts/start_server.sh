@@ -1,3 +1,5 @@
 #!/bin/bash
-# Example: Start a Node.js server
-pm2 start app.js # Or a command to start your application
+# Change into the application directory
+cd /var/www/html/
+# Start the Node.js server using pm2
+pm2 start app.js
